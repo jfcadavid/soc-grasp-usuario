@@ -1,0 +1,13 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sqlite
+
+# Builds
+bin/
+obj/
+
+# .NET
+*.dll
+*.pdb
