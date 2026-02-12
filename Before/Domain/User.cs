@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Before.Domain
 {
-    internal class User
+    public class User
     {
         public string Name { get; set; } = "";
         public string Email { get; set; } = "";

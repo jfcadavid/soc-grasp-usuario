@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Before.Domain
 {
-    internal class UserController
+    public class UserController
     {
         //“Base de datos” simulada
         private readonly List<User> _database = new();
