@@ -6,26 +6,20 @@ using System.Threading.Tasks;
 
 namespace After.Domain
 {
+    // CAPA: DOMAIN
+    // RESPONSABILIDAD: Representar la entidad Usuario
+    // SoC: Solo modela datos, no valida ni guarda
     public class User
     {
-
-        // CAPA: DOMAIN
-        // RESPONSABILIDAD: Representar la entidad Usuario
-        // SoC: Solo modela datos, no valida ni guarda
         public string Name { get; }
         public string Email { get; }
-        public string Phone { get; }
-        public string Address { get; }
+        public string Password { get; }
 
-        public User(string name, string email, string phone, string address)
+        public User(string name, string email, string password)
         {
             Name = name;
             Email = email;
-            Phone = phone;
-            Address = address;
-
+            Password = password;
         }
     }
-
-    
 }

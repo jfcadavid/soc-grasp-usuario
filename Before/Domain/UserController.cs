@@ -42,7 +42,7 @@ namespace Before.Domain
 
             return "Usuario agregado correctamente";
 
-            //CASO DE USO: encontrar por email
+            
 
         }
 

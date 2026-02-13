@@ -7,16 +7,13 @@ using System.Threading.Tasks;
 
 namespace After.Infrastructure
 {
-    public class IUserRepository
+    // CAPA: INFRASTRUCTURE
+    // RESPONSABILIDAD:cómo se guarda/busca
+    // SoC: el servicio NO guarda directamente, delega a este contrato
+    public interface IUserRepository
     {
-        // CAPA: INFRASTRUCTURA
-        // RESPONSABILIDAD: Definir cómo se accede a los datos (contrato)
-        // SoC: Separa la persistencia del resto del sistema
-        public interface IuserRepository
-        {
-            bool ExistByEmail(string email);
-            void Add(User user);
-            User? FindByEmail(string email);
-        }
+        bool ExistsByEmail(string email);
+        void Add(User user);
+        User? FindByEmail(string email);
     }
 }

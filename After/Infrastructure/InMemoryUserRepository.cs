@@ -8,12 +8,13 @@ namespace After.Infrastructure
     {
         //  CAPA: INFRASTRUCTURE
         //  RESPONSABILIDAD: Simular almacenamiento en memoria
+        //  En lugar de usar una BD en este caso usamos una lista
         //  SoC: Solo maneja datos, no contiene reglas de negocio
 
         // Simulando BD
         private readonly List<User> _users = new();
 
-        public bool ExistByEmail(string email)
+        public bool ExistsByEmail(string email)
         {
             return _users.Any(u => u.Email == email);
         }
